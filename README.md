@@ -1,2 +1,7 @@
 # wargaming-test-lines
-Lines game for test task
+
+Для сборки необходимо установить зависимости:
+    
+    npm install
+
+Post-install скрипт проведет сборку конечного js файла.
