@@ -1,0 +1,21 @@
+{
+  "name": "wargaming-test-lines",
+  "version": "1.0.0",
+  "description": "Test task",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/browserify src/index.js > assets/js/main.js",
+    "watch": "./node_modules/.bin/watchify src/index.js -o assets/js/main.js -v",
+    "install": "npm run build"
+  },
+  "author": "Iliya Tovstyonok",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "latest",
+    "watchify": "latest"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4"
+  }
+}

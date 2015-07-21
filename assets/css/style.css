@@ -1,0 +1,72 @@
+/* Field */
+.field
+{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.field-element
+{
+    box-shadow: inset 0px 0px 1px;
+    display: block;
+    float: left;
+    background-size: cover;
+}
+
+.field-element:hover .ball
+{
+    //background: #cccccc;
+    cursor: pointer;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto -60%;
+}
+
+.field-element.destination {
+    box-shadow: inset 0px 0px 1px #880000;
+    cursor: not-allowed;
+    background: none;
+}
+
+.field-element.closed {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+.field-element:empty.destination {
+    box-shadow: inset 0px 0px 1px #3b4d15;
+    cursor: pointer;
+}
+
+
+.field-element:empty.destination:hover
+{
+    background: #afe8ab;
+}
+
+.field-element.selected {
+    background: #afe8ab;
+}
+
+.field-element.selected .ball
+{
+    width: 60%;
+    height: 60%;
+    margin: 20% auto -60%;
+}
+
+.ball
+{
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin: 25% auto -50%;
+    border-radius: 50%;
+}
+
+.score-handler
+{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
